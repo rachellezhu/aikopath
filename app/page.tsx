@@ -47,7 +47,7 @@ export default function Home() {
 
             <button
               onClick={generate}
-              className={`w-full ${loading || splitInput.length < 2 || trimmedInput.length < 10 ? "bg-gray-600 text-gray-200" : "bg-blue-500 hover:bg-blue-600"} transition px-4 py-2 rounded-lg font-medium`}
+              className={`w-full ${loading || splitInput.length < 2 || trimmedInput.length < 10 ? "bg-gray-600 text-gray-200" : "bg-blue-500 hover:bg-blue-600 cursor-pointer"} transition px-4 py-2 rounded-lg font-medium`}
             >
               {loading ? "Generating..." : "Generate Roadmap"}
             </button>
